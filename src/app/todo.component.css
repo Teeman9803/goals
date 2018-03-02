@@ -1,0 +1,13 @@
+h1, p {
+  font-family: 'Lato';
+  text-transform: capitalize;
+}
+
+.delete {
+  cursor: pointer;
+  color: gray;
+}
+
+.completed {
+  text-decoration: line-through;
+}
