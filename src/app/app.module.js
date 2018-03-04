@@ -13,8 +13,8 @@ var forms_1 = require("@angular/forms");
 var animations_1 = require("@angular/platform-browser/animations");
 var material_1 = require("@angular/material");
 var app_component_1 = require("./app.component");
-var todo_service_1 = require("./todo.service");
-var todo_component_1 = require("./todo.component");
+var todo_service_1 = require("./todos/todo.service");
+var todo_component_1 = require("./todos/todo.component");
 var AppModule = (function () {
     function AppModule() {
     }

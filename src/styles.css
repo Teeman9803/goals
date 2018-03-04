@@ -3,12 +3,12 @@
 
 h1 {
   color: #369;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Lato;
   font-size: 250%;
 }
 h2, h3 {
   color: #444;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Lato;
   font-weight: lighter;
 }
 body {
@@ -23,7 +23,7 @@ a {
   cursor: hand;
 }
 button {
-  font-family: Arial;
+  font-family: Lato;
   background-color: #eee;
   border: none;
   padding: 5px 10px;
@@ -68,4 +68,7 @@ nav a.active {
 
 .mat-app-background {
   padding: 20px;
+  width: 50%;
+  max-width:500px;
+  margin: 0 auto;
 }

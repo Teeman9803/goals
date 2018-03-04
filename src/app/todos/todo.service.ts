@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from "@angular/core";
 import { BehaviorSubject } from "rxjs/Rx";
 
-import { Todo } from '../app/Todo';
+import { Todo } from '../models/Todo';
 
 @Injectable()
 

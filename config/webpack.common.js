@@ -1,6 +1,7 @@
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CleanWebpackPlugin = require('clean-webpack-plugin');
 var helpers = require('./helpers');
 
 module.exports = {
@@ -45,6 +46,7 @@ module.exports = {
       }
     ]
   },
+  devtool: 'inline-source-map',
   plugins: [
     // Workaround for angular/angular#11580
     new webpack.ContextReplacementPlugin(
@@ -55,7 +57,8 @@ module.exports = {
     ),
     new HtmlWebpackPlugin({
       template: 'src/index.html'
-    })
+    }),
+    new CleanWebpackPlugin(['/dist'])
   ]
 };
 

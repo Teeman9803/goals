@@ -17,8 +17,8 @@ import {
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
-import { TodoService } from './todo.service';
-import { TodoComponent } from './todo.component';
+import { TodoService } from './todos/todo.service';
+import { TodoComponent } from './todos/todo.component';
 
 @NgModule({
   imports:      [ 

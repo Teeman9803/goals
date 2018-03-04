@@ -1,5 +1,5 @@
 import { Component, OnChanges} from '@angular/core';
-import { Todo } from './Todo';
+import { Todo } from '../models/Todo';
 import { TodoService } from './todo.service';
 import { Observable } from 'rxjs/Observable';
 
@@ -20,11 +20,11 @@ export class TodoComponent {
    }
 
    addTodo() {
-    // this.todoService.add({});
+    this.todoService.add({});
    }
 
    deleteTodo(id:number) {
-    // this.todoService.delete(id);
+    this.todoService.delete(id);
    }
 
    isCompleted(todo:Todo) {

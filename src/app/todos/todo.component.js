@@ -21,10 +21,10 @@ var TodoComponent = (function () {
         // this.todoService.load(id);
     };
     TodoComponent.prototype.addTodo = function () {
-        // this.todoService.add({});
+        this.todoService.add({});
     };
     TodoComponent.prototype.deleteTodo = function (id) {
-        // this.todoService.delete(id);
+        this.todoService.delete(id);
     };
     TodoComponent.prototype.isCompleted = function (todo) {
         todo.completed = !todo.completed;
