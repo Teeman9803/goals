@@ -17,8 +17,8 @@ import {
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
-import { TodoService } from './todos/todo.service';
-import { TodoComponent } from './todos/todo.component';
+import { GoalService } from './goals/goal.service';
+import { GoalComponent } from './goals/goal.component';
 
 @NgModule({
   imports:      [ 
@@ -38,8 +38,8 @@ import { TodoComponent } from './todos/todo.component';
     MatSlideToggleModule,
     MatCheckboxModule
   ],
-  declarations: [ AppComponent, TodoComponent],
-  providers : [TodoService ],
+  declarations: [ AppComponent, GoalComponent],
+  providers : [GoalService ],
   bootstrap:    [ AppComponent ]
 })
 

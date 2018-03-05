@@ -1,0 +1,17 @@
+.app-container {
+  width: 50%;
+  max-width: 500px;
+  margin: 0 auto; }
+
+h1, p {
+  font-family: 'Lato';
+  text-transform: capitalize; }
+
+.delete {
+  cursor: pointer;
+  color: gray; }
+
+.completed {
+  text-decoration: line-through; }
+
+/*# sourceMappingURL=goal.component.css.map */

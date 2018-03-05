@@ -1,0 +1,17 @@
+<h1>Goals</h1>
+<mat-list>
+  <mat-list-item *ngFor="let goal of goals | async" #goalList>
+    <p>
+    <mat-icon matListIcon (click)="deleteGoal(goal.id)" class="delete">delete</mat-icon>
+    </p>
+    <p matLine>
+      <mat-checkbox (change)="isCompleted(goal);">
+        <div [ngClass]="{'completed': goal.completed}">{{goal.name}}</div>
+      </mat-checkbox>
+    </p>   
+    <mat-divider></mat-divider>        
+</mat-list-item>
+</mat-list>
+<p matLine>
+  <button (click)="addGoal()" mat-raised-button color="primary">Add Goal</button>
+</p>

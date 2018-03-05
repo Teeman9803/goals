@@ -13,8 +13,8 @@ var forms_1 = require("@angular/forms");
 var animations_1 = require("@angular/platform-browser/animations");
 var material_1 = require("@angular/material");
 var app_component_1 = require("./app.component");
-var todo_service_1 = require("./todos/todo.service");
-var todo_component_1 = require("./todos/todo.component");
+var goal_service_1 = require("./goals/goal.service");
+var goal_component_1 = require("./goals/goal.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -37,8 +37,8 @@ var AppModule = (function () {
                 material_1.MatSlideToggleModule,
                 material_1.MatCheckboxModule
             ],
-            declarations: [app_component_1.AppComponent, todo_component_1.TodoComponent],
-            providers: [todo_service_1.TodoService],
+            declarations: [app_component_1.AppComponent, goal_component_1.GoalComponent],
+            providers: [goal_service_1.GoalService],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);
